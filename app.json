@@ -1,0 +1,23 @@
+{
+  "name": "SmartButtonBot",
+  "description": "A Telegram bot that allows admins to create and manage inline buttons in the welcome message.",
+  "repository": "https://github.com/STKR2/SmartButtonBot",
+  "keywords": ["telegram", "bot", "telebot", "inline buttons", "admin control"],
+  "env": {
+    "BOT_TOKEN": {
+      "description": "Your Telegram bot token",
+      "required": true
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "basic"
+    }
+  }
+}
