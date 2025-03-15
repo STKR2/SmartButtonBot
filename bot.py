@@ -1,9 +1,9 @@
 import telebot
 from telebot import types
-
-bot = telebot.TeleBot('Enter your bot code here')
 import os
 
+BOT_TOKEN = os.getenv("BOT_TOKEN")
+bot = telebot.TeleBot(BOT_TOKEN)
 admin_id = int(os.getenv("ADMIN_ID"))
 
 temp_button = {}
