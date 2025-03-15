@@ -1,11 +1,15 @@
 {
-  "name": "SmartButtonBot",
-  "description": "A Telegram bot that allows admins to create and manage inline buttons in the welcome message.",
-  "repository": "https://github.com/STKR2/SmartButtonBot",
-  "keywords": ["telegram", "bot", "telebot", "inline buttons", "admin control"],
+  "name": "AutoReplyBot",
+  "description": "A Telegram bot that automatically sends structured replies to maintain group order.",
+  "repository": "https://github.com/STKR2/AutoReplyBot",
+  "keywords": ["telegram", "bot", "telebot", "group-management", "auto-reply"],
   "env": {
     "BOT_TOKEN": {
       "description": "Your Telegram bot token",
+      "required": true
+    },
+    "ADMIN_ID": {
+      "description": "Your Telegram user ID (admin)",
       "required": true
     }
   },
@@ -17,7 +21,7 @@
   "formation": {
     "worker": {
       "quantity": 1,
-      "size": "basic"
+      "size": "free"
     }
   }
 }
